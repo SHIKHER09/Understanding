@@ -27,9 +27,4 @@ const psychologists = [
     contact: "987-654-3210",
   },
 ];
-
-router.get("/psychologists", (req, res) => {
-  res.json(psychologists);
-});
-
 export default router;

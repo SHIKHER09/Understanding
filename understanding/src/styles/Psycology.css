@@ -1,40 +1,45 @@
-
-.cont>h1{
-    font-size:2.2vw;
-    padding:1.5vw 5vw;
-    background: linear-gradient( #fff, cyan);
+.cont>h1 {
+    font-size: 2.2vw;
+    padding: 1.5vw 5vw;
+    background: linear-gradient(#fff, cyan);
     -webkit-background-clip: text;
     color: transparent;
 }
-.box{
-    width:100%;
+
+.box {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap:5vw;
-    padding:0 5vw;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 5vw;
     margin-bottom: 1vw;
 }
 
 .resp {
-    padding: 1vw;
-    width: 50%;
-    max-height:53.5vh;
-    overflow:'auto';
+    margin-left: 5%;
+    padding: 2vw;
+    width: 90%;
+    max-height: 53.5vh;
+    overflow: 'auto';
     border: 2px solid rgb(114, 210, 239);
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border-radius: 25px;
     overflow: auto;
 }
-.resp::-webkit-scrollbar{
+
+.resp::-webkit-scrollbar {
     display: none;
 }
-.imgss{
-    width:30%;
-    max-height:53.5vh;
+
+.imgss {
+    width: 32%;
+    max-height: 54.5vh;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .psychologistList {
     list-style: none;
-},
+}

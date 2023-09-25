@@ -24,8 +24,8 @@ function Nav() {
 
   return (
     <div style={{ height: '10vmin', width: '100%', backgroundColor: '#2f1e26', display: 'flex', alignItems: 'center', padding: 20, fontSize: '3vmin', fontWeight: '400', zIndex: 9, boxShadow: 'inset 0 -2px 0vw #d7b4c8' }}>
-      <Link to="/" style={{ width: '40vw',textDecoration:'none',color:'inherit' }}>
-        Understanzee
+      <Link to="/" style={{ width: '40vw', textDecoration: 'none', color: '#01ffff' }}>
+        UnderStanzee
       </Link>
       {currentUser.currentuser ?
         <div style={{

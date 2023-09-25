@@ -4,6 +4,7 @@ import img1 from "../Assets/Psychology2.jpg";
 import axios from 'axios';
 import Footer from '../Component/Footer';
 import '../styles/Psycology.css';
+import GoogleSearchButton from './GoogleSearchButton';
 
 const PsychologistFinder = () => {
   const [psychologists, setPsychologists] = useState([]);
@@ -44,14 +45,12 @@ const PsychologistFinder = () => {
 
   return (
     <div className='cont' style={{ display: 'block' }}>
-      <h1 style={{}}>Our Suggestion....</h1>
+      <h1 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Our Suggestion....</h1>
       <div className="box">
         <div className="resp">
           <p style={{ fontSize: '1.6vw' }}>{sol}</p>
         </div>
-        <div className="imgss">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTELNbuwMPQAypHZZsmoWFFkA_RDRGZ4YKCKA&usqp=CAU" alt="" style={{ width: '100%', heigh: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-        </div>
+
       </div>
       <div style={{ width: '100%', height: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black', gap: '2vw', color: 'black', marginBottom: '2vw' }}>
         <div style={{ width: '40%', height: '100%', padding: '10px' }}>
@@ -62,18 +61,12 @@ const PsychologistFinder = () => {
           />
         </div>
         <div style={{ width: '40%', height: 'auto', backgroundColor: 'white', boxShadow: '0 0 10px #e8a5c8', padding: '1vw', borderRadius: '15px' }}>
-          <h2 style={{ font: '24px' }}>Psychologists Near You</h2>
-          <ul className='psychologistList'>
+          <h2 style={{ font: '24px', display: "flex", justifyContent: 'center', alignItems: 'center', paddingBottom: "10px" }}>Psychologists Near You</h2>
 
-            {psychologists.map((psychologist) => (
-              <li key={psychologist.id} style={styles.psychologistItem}>
-                <h3>{psychologist.name}</h3>
-                <p>Location: {psychologist.location}</p>
-                <p>Contact: {psychologist.contact}</p>
-              </li>
-            ))}
+          <div style={{ font: '24px', display: "flex", justifyContent: 'center', alignItems: 'center', paddingBottom: "10px" }}>
+            <GoogleSearchButton />
+          </div>
 
-          </ul>
 
         </div>
       </div>

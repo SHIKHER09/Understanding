@@ -4,11 +4,6 @@ import { Link } from 'react-router-dom';
 import Im1 from '../Assets/Im1.png'
 import '../styles/Landing.css'
 import Footer from '../Component/Footer';
-// import { FaUserMd } from 'react-icons/fa';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faUserMd } from '@fortawesome/free-solid-svg-icons';
-// import { faRobot } from '@fortawesome/free-solid-svg-icons';
-// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import TeamIcon from '@mui/icons-material/People';
 import StethoscopeIcon from '@mui/icons-material/LocalHospital';
@@ -28,7 +23,7 @@ function Lnading() {
 
           <div className='leftTitle'>
             <h1 style={{ marginBottom: '10px', fontSize: '2vw' }}>Understanzee</h1>
-            <p style={{ width: '75%', marginBottom: '15px', fontSize: '1.2vw' }}>Change your feelings by just let us know <br /> what you are feeling now !!!</p>
+            <h2 style={{ width: '75%', marginBottom: '15px', fontSize: '1.2vw' }}>Change your feelings by just let us know <br /> what you are feeling now !!!</h2>
             <Link to="/Assessment" className='btn'>
 
               Start &nbsp; <ArrowForwardIcon style={{ color: 'white', fontSize: '1.6vw', fontFamily: 'cursive' }} />
@@ -36,7 +31,6 @@ function Lnading() {
 
 
           </div>
-
         </div>
 
       </div>
@@ -48,7 +42,7 @@ function Lnading() {
           <div className='left'>
             <h2>Welcom To <br />
               Understanzee </h2>
-            <div className="anim" style={{  width: '100%', height: '3vw',marginTop:'0.3vw' }}>
+            <div className="anim" style={{ width: '100%', height: '3vw', marginTop: '0.3vw' }}>
               <Anim></Anim>
             </div>
           </div>

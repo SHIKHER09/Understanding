@@ -9,7 +9,7 @@ function Footer() {
     alignItems: 'center',
     paddingLeft: '20px',
     borderTop: '2px solid #8f848f',
-    backgroundColor: '#f5f2f1',
+    backgroundColor: 'DEE3E1',
     fontSize: '1.2vw',
     color: 'black',
     justifyContent: 'center',
@@ -20,10 +20,10 @@ function Footer() {
 
 
       <div style={footerStyles}>
-        <div style={{textAlign:'center'}}>
+        <div style={{ textAlign: 'center' }}>
           <h3>Understanzee</h3>
           <p>
-            All Rights Reserved &nbsp; © 2023 &nbsp; Understanzee Team
+            All Rights Reserved &nbsp; © 2023 &nbsp; Understanzee
           </p>
         </div>
 
